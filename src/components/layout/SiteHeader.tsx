@@ -30,16 +30,14 @@ export default function SiteHeader() {
       <nav className="max-w-content mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         {/* Logo / Brand */}
         <Link href="/" className="flex items-center space-x-3 group">
-          <div className="flex items-center justify-center transition-all group-hover:scale-105">
-            <Image 
-              src="/images/logo.png" 
-              alt="SideA Logo" 
-              width={48} 
-              height={48}
-              className="object-contain"
-            />
-          </div>
-          <span className="font-display font-bold text-xl text-text-main">
+          <Image 
+            src="/images/logo.png" 
+            alt="SideA Logo" 
+            width={80} 
+            height={80}
+            className="object-contain transition-all group-hover:scale-105"
+          />
+          <span className="font-display font-bold text-4xl text-text-main">
             SideA
           </span>
         </Link>
