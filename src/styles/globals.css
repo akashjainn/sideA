@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-text-main bg-bg-main antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl tracking-tight;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+}
+
+@layer components {
+  /* LED-inspired button with glow */
+  .btn-primary {
+    @apply px-8 py-4 rounded-full bg-accent-primary text-white font-medium 
+           transition-all duration-300 hover:shadow-led-hover hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 rounded-full border-2 border-accent-primary text-accent-primary 
+           font-medium transition-all duration-300 hover:bg-accent-primary hover:text-white
+           focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2;
+  }
+
+  /* HUD-style microcopy */
+  .hud-label {
+    @apply text-xs uppercase tracking-wider text-text-muted font-mono;
+  }
+
+  /* Scanline overlay effect */
+  .scanlines {
+    position: relative;
+  }
+
+  .scanlines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0px,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  /* Vector grid background */
+  .vector-grid {
+    background-image: 
+      linear-gradient(rgba(79, 162, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(79, 162, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Glowing corner brackets */
+  .corner-brackets {
+    @apply relative;
+  }
+
+  .corner-brackets::before,
+  .corner-brackets::after {
+    content: '';
+    @apply absolute w-4 h-4 border-accent-primary;
+  }
+
+  .corner-brackets::before {
+    @apply top-0 left-0 border-t-2 border-l-2;
+  }
+
+  .corner-brackets::after {
+    @apply bottom-0 right-0 border-b-2 border-r-2;
+  }
+
+  /* Card with hover lift */
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-primary to-accent-lines bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  /* Smooth fade-in animations */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Custom focus styles for accessibility */
+  .focus-visible {
+    @apply focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2;
+  }
+}
