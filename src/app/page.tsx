@@ -11,11 +11,14 @@ import TechSpecs from '@/components/sections/TechSpecs'
 import Scenarios from '@/components/sections/Scenarios'
 import FAQ from '@/components/sections/FAQ'
 import FinalCTA from '@/components/sections/FinalCTA'
+import ScrollShowcase from '@/components/sections/ScrollShowcase'
+import CinematicModules from '@/components/sections/CinematicModules'
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+      <ScrollShowcase />
       <ProductOverview />
       <ProductGallery />
       <Features />
@@ -24,6 +27,7 @@ export default function HomePage() {
       <TechSpecs />
       <Scenarios />
       <FAQ />
+      <CinematicModules />
       <FinalCTA />
     </>
   )

@@ -32,7 +32,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body className="font-body antialiased">
+      <body className="font-body antialiased relative">
+        {/* Global background */}
+        <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-b from-bg-alt to-bg-altEnd" />
+          <div className="absolute inset-0 noise-overlay opacity-30" />
+        </div>
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
