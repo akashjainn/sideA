@@ -68,8 +68,10 @@ export default function StorySection() {
               <Image
                 src="/images/device-atmospheric.png"
                 alt="SideA device with atmospheric lighting"
-                width={500}
-                height={500}
+                width={1000}
+                height={1000}
+                sizes="(min-width: 1024px) 40vw, 90vw"
+                quality={90}
                 className="w-4/5 h-auto drop-shadow-2xl"
               />
               

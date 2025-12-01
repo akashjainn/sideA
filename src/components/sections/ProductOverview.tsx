@@ -73,9 +73,10 @@ export default function ProductOverview() {
             <Image
               src="/images/device-angled.png"
               alt="SideA device angled view"
-              width={500}
-              height={500}
-              className="w-full h-full object-contain transform rotate-12 hover:rotate-6 transition-transform duration-500"
+              fill
+              sizes="(min-width: 1024px) 40vw, 90vw"
+              quality={90}
+              className="object-contain transform rotate-12 hover:rotate-6 transition-transform duration-500"
             />
             <div className="absolute bottom-4 right-4 hud-label text-accent-primary">
               DESIGNED FOR INTENTION

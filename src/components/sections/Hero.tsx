@@ -125,8 +125,10 @@ export default function Hero({
               <Image
                 src={heroImage}
                 alt="SideA Music Device"
-                width={600}
-                height={800}
+                width={1200}
+                height={1600}
+                sizes="(min-width: 1280px) 40vw, (min-width: 768px) 60vw, 90vw"
+                quality={90}
                 className="w-full h-auto drop-shadow-2xl"
                 priority
               />
