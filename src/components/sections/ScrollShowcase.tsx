@@ -46,33 +46,30 @@ export default function ScrollShowcase() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {items.map((item, i) => (
-            <motion.article
+            <article
               key={i}
-              style={{ opacity }}
               className="relative p-6 rounded-3xl glass-panel neon-border overflow-hidden group"
             >
               <div className="absolute inset-0 noise-overlay opacity-40 pointer-events-none" />
               {/* Image container */}
               <div className="relative w-full overflow-hidden rounded-2xl mb-6">
-                <motion.div style={{ y: i % 2 === 0 ? y1 : y2 }}>
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    width={1000}
-                    height={1000}
-                    sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 90vw"
-                    quality={95}
-                    priority
-                    placeholder="empty"
-                    className="w-full h-auto object-contain"
-                  />
-                </motion.div>
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  width={1000}
+                  height={1000}
+                  sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 90vw"
+                  quality={95}
+                  priority
+                  placeholder="empty"
+                  className="w-full h-auto object-contain"
+                />
               </div>
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold">{item.title}</h3>
                 <p className="text-text-muted mt-2">{item.copy}</p>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>
