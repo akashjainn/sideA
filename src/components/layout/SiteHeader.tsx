@@ -29,13 +29,13 @@ export default function SiteHeader() {
     >
       <nav className="max-w-content mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         {/* Logo / Brand */}
-        <Link href="/" className="flex items-center space-x-2 group">
-          <div className="w-10 h-10 rounded-lg flex items-center justify-center transition-all group-hover:scale-110">
+        <Link href="/" className="flex items-center space-x-3 group">
+          <div className="w-16 h-16 flex items-center justify-center transition-all group-hover:scale-105">
             <Image 
               src="/images/logo.png" 
               alt="SideA Logo" 
-              width={40} 
-              height={40}
+              width={64} 
+              height={64}
               className="object-contain"
             />
           </div>
