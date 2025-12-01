@@ -2,6 +2,7 @@
 // Minimal, retrofuturistic aesthetic.
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function SiteFooter() {
   return (
@@ -10,10 +11,14 @@ export default function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent-primary to-accent-lines flex items-center justify-center shadow-led">
-                <span className="text-white font-display font-bold text-lg">S</span>
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="SideA Logo"
+                width={40}
+                height={40}
+                className="h-10 w-auto object-contain shrink-0"
+              />
               <span className="font-display font-bold text-xl">SideA</span>
             </div>
             <p className="text-text-muted text-sm leading-relaxed max-w-md">
