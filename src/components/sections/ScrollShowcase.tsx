@@ -61,7 +61,9 @@ export default function ScrollShowcase() {
                     width={1000}
                     height={1000}
                     sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 90vw"
-                    quality={90}
+                    quality={95}
+                    priority
+                    placeholder="empty"
                     className="w-full h-auto object-contain"
                   />
                 </motion.div>
