@@ -37,7 +37,7 @@ export default function SiteHeader() {
             height={120}
             className="object-contain transition-all group-hover:scale-105"
           />
-          <span className="font-display font-bold text-5xl text-text-main">
+          <span className="font-display font-bold text-xl text-text-main">
             SideA
           </span>
         </Link>
