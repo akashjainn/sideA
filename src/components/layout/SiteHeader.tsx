@@ -5,6 +5,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
@@ -29,8 +30,14 @@ export default function SiteHeader() {
       <nav className="max-w-content mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         {/* Logo / Brand */}
         <Link href="/" className="flex items-center space-x-2 group">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent-primary to-accent-lines flex items-center justify-center shadow-led transition-all group-hover:shadow-led-hover">
-            <span className="text-white font-display font-bold text-lg">S</span>
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center transition-all group-hover:scale-110">
+            <Image 
+              src="/images/logo.png" 
+              alt="SideA Logo" 
+              width={40} 
+              height={40}
+              className="object-contain"
+            />
           </div>
           <span className="font-display font-bold text-xl text-text-main">
             SideA
