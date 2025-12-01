@@ -33,7 +33,7 @@ export default function FAQ() {
     },
     {
       question: 'What is a "Side A" playlist?',
-      answer: 'Your "Side A" is your personal curated playlist — the collection of tracks you've chosen to represent you. Like the A-side of a cassette tape, it's what you share first when you meet someone. You can update it anytime, but it's always intentionally chosen, never algorithmic.',
+      answer: 'Your "Side A" is your personal curated playlist — the collection of tracks you\'ve chosen to represent you. Like the A-side of a cassette tape, it\'s what you share first when you meet someone. You can update it anytime, but it\'s always intentionally chosen, never algorithmic.',
     },
     {
       question: 'Where did the inspiration come from?',
