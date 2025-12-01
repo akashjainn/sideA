@@ -15,7 +15,7 @@ export default function Scenarios() {
     {
       image: '/images/scenario-birthday.png',
       title: 'Campus Exchange',
-      vignette: 'After class, friends gather. They tap devices around the table — a rapid-fire exchange of new discoveries. Someone's Side A has a track no one's heard. That's the whole point.',
+      vignette: 'After class, friends gather. They tap devices around the table — a rapid-fire exchange of new discoveries. Someone\'s Side A has a track no one\'s heard. That\'s the whole point.',
       label: 'SCENARIO B',
     },
     {

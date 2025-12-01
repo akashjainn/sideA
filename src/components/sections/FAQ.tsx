@@ -25,11 +25,11 @@ export default function FAQ() {
     },
     {
       question: 'Can I share music remotely or online?',
-      answer: 'No. SideA is intentionally non-networked. There's no cloud syncing, no remote sharing, and no online features. The only way to receive someone's playlist is to meet them in person and tap devices together. This constraint is central to the concept.',
+      answer: 'No. SideA is intentionally non-networked. There\'s no cloud syncing, no remote sharing, and no online features. The only way to receive someone\'s playlist is to meet them in person and tap devices together. This constraint is central to the concept.',
     },
     {
       question: 'Why make a separate device instead of an app?',
-      answer: 'Apps exist in an ecosystem designed for infinite scrolling and constant notifications. A dedicated device creates a boundary — it's something you carry with intention, not distraction. The pebble shape, the tactile interaction, the ritual of tapping — these are physical experiences an app can't replicate.',
+      answer: 'Apps exist in an ecosystem designed for infinite scrolling and constant notifications. A dedicated device creates a boundary — it\'s something you carry with intention, not distraction. The pebble shape, the tactile interaction, the ritual of tapping — these are physical experiences an app can\'t replicate.',
     },
     {
       question: 'What is a "Side A" playlist?',
