@@ -52,20 +52,21 @@ export default function ScrollShowcase() {
               className="relative p-6 rounded-3xl glass-panel neon-border overflow-hidden group"
             >
               <div className="absolute inset-0 noise-overlay opacity-40 pointer-events-none" />
-              {/* Aspect container to prevent image overlapping text */}
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
-                <motion.div style={{ y: i % 2 === 0 ? y1 : y2 }} className="absolute inset-0">
+              {/* Image container */}
+              <div className="relative w-full overflow-hidden rounded-2xl mb-6">
+                <motion.div style={{ y: i % 2 === 0 ? y1 : y2 }}>
                   <Image
                     src={item.img}
                     alt={item.title}
-                    fill
+                    width={1000}
+                    height={1000}
                     sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 90vw"
                     quality={90}
-                    className="object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 </motion.div>
               </div>
-              <div className="mt-5 relative z-10">
+              <div className="relative z-10">
                 <h3 className="text-2xl font-bold">{item.title}</h3>
                 <p className="text-text-muted mt-2">{item.copy}</p>
               </div>
