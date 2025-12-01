@@ -15,9 +15,9 @@ export default function SiteFooter() {
               <Image
                 src="/images/logo.png"
                 alt="SideA Logo"
-                width={40}
-                height={40}
-                className="h-10 w-auto object-contain shrink-0"
+                width={56}
+                height={56}
+                className="h-14 w-auto object-contain shrink-0"
               />
               <span className="font-display font-bold text-xl">SideA</span>
             </div>

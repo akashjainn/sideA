@@ -29,7 +29,7 @@ export default function SiteHeader() {
     >
       <nav className="max-w-content mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         {/* Logo / Brand */}
-        <Link href="/" className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-baseline gap-3 group">
           <Image
             src="/images/logo.png"
             alt="SideA Logo"
