@@ -114,6 +114,7 @@
     -webkit-text-fill-color: transparent; /* Improve cross-browser reliability */
     display: inline-block; /* Prevent paint issues during transforms */
     position: relative; /* Create local stacking context */
+    backface-visibility: hidden; /* Avoid occasional flicker when parent is transformed */
   }
 
   /* Glassmorphism panel */

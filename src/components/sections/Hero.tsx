@@ -30,7 +30,7 @@ export default function Hero({
   const flareY = useTransform(scrollYProgress, [0, 1], ['20%', '-10%'])
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center overflow-hidden vector-grid">
+    <section ref={ref} className="relative isolate min-h-screen flex items-center overflow-hidden vector-grid">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-bg-alt via-bg-main to-bg-altEnd opacity-90" />
 
