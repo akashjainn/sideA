@@ -33,9 +33,9 @@ export default function SiteHeader() {
           <Image
             src="/images/logo.png"
             alt="SideA Logo"
-            width={48}
-            height={48}
-            className="h-9 md:h-10 w-auto object-contain shrink-0 transition-transform group-hover:scale-105"
+            width={80}
+            height={80}
+            className="h-12 md:h-14 w-auto object-contain shrink-0 transition-transform group-hover:scale-105"
           />
           <span className="font-display font-bold text-2xl md:text-3xl leading-none text-text-main">
             SideA
