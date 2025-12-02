@@ -111,6 +111,9 @@
   /* Gradient text */
   .gradient-text {
     @apply bg-gradient-to-r from-accent-primary to-accent-lines bg-clip-text text-transparent;
+    -webkit-text-fill-color: transparent; /* Improve cross-browser reliability */
+    display: inline-block; /* Prevent paint issues during transforms */
+    position: relative; /* Create local stacking context */
   }
 
   /* Glassmorphism panel */

@@ -59,7 +59,7 @@ export default function Hero({
 
             <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-tight">
               Share Music{' '}
-              <span className="gradient-text">Through Presence</span>
+              <span className="gradient-text relative z-10">Through Presence</span>
             </h1>
 
             <p className="text-lg md:text-xl text-text-muted leading-relaxed max-w-xl">
